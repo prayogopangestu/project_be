@@ -135,7 +135,7 @@ func main() {
 		Password: os.Getenv("HOST_PASSWORD"),
 		User:     os.Getenv("HOST_USER"),
 		DBName:   os.Getenv("HOST_DBNAME"),
-		SSLMode:  os.Getenv("HOST_SSLMODE"),
+		// SSLMode:  os.Getenv("HOST_SSLMODE"),
 	}
 
 	db, err := storage.NewConnection(config)
